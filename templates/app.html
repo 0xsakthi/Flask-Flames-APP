@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FLAMES</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+
+    <style>
+      .alert {
+        background: green;
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        margin: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>FLAMES</h3>
+    </div>
+
+    <!-- Form @sakthi -->
+    <div class="container">
+      <form action="/send" method="POST">
+        <label for="Enter your name">First Name</label>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          class="u-full-width"
+          name="num1"
+        />
+
+        <label for="Enter your Crush name">Second Name</label>
+        <input
+          type="text"
+          placeholder="Enter your Crush name"
+          class="u-full-width"
+          name="num2"
+        />
+
+        <label for="Operation">Types</label>
+        <select class="u-full-width" name="operation">
+          <option value="Flames">Flames</option>
+        </select>
+
+        <input type="submit" value="Calculate" id="calc_btn" />
+        <br />
+        <div class="alert">
+          {{ sum }}
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<label for="Created By,SAKTHI :)">Created by
+@SaKtHi
+</label>
